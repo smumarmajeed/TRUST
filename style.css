@@ -1,0 +1,222 @@
+body, html {
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(0 0 0 / 47%); /* Light transparent background */
+    z-index: 1000;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 50px;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+  }
+
+  .logo img {
+    max-width: 100%;
+    height: 45px;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+  }
+  
+  nav ul li {
+    display: inline;
+  }
+  
+  nav ul li a {
+    display: inline-block;
+    padding: 10px 30px;
+    color: #fff; /* Change the color of the links */
+    text-decoration: none;
+    position: relative; /* Required for the outline animation */
+  }
+  
+  nav ul li a:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid transparent; /* Initial transparent border */
+    box-sizing: border-box;
+    transition: border-color 0.3s; /* Add transition effect */
+  }
+  
+  nav ul li a:hover:before {
+    border-color: #1981b3; /* Change the border color on hover */
+    animation: outline 1s infinite alternate; /* Add outline animation */
+  }
+  
+  @keyframes outline {
+    0% {
+      border-width: 2px;
+    }
+    100% {
+      border-width: 6px;
+      opacity: 0; /* Fades out at the end of the animation */
+    }
+  }
+  
+  nav ul li a:hover {
+    color: #1981b3; /* Change the color of the text on hover */
+    font-weight: bold; /* Make the text a little bolder on hover */
+  }
+  
+  nav ul li a:hover:before,
+  nav ul li a.active:before {
+    border-color: #1981b3; /* Change the border color on hover and for active link */
+  }
+  
+  nav ul li a.active {
+    background-color: #1981b3; /* Change the background color of the active link */
+    font-weight: bold; /* Make the active link bolder */
+  }
+
+
+  .video-container {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Adjust the height as needed */
+    overflow: hidden;
+  }
+  
+  .video-overlay {
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    width: 60%;
+    height: 40%;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark grey overlay */
+    z-index: 1; /* Ensure the overlay is above the video */
+    border-radius: 177px 25px 155px 100px;
+  }
+  
+  #video-background {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the video covers the entire container */
+  }
+  
+  video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 2; /* Ensure content is above video overlay */
+  }
+  
+
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .image-container {
+    position: relative;
+    margin: 10px;
+    overflow: hidden;
+    flex: 0 0 calc(33% - 102px);
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: 315px;
+    transition: transform 0.3s ease;
+  }
+  
+  .image-container:hover img {
+    transform: scale(1.1);
+  }
+  
+  .slice-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    padding: 10px;
+    color: #fff; /* White text */
+    box-sizing: border-box;
+    transition: bottom 0.3s ease;
+  }
+  
+  .slice-info h2,
+  .slice-info p {
+    margin: 0;
+  }
+  
+  .image-container:hover .slice-info {
+    bottom: -50px;
+  }
+
+  .heading {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .heading h1 {
+    font-size: 48px;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Text shadow for depth */
+  }
+  
+  .heading p {
+    font-size: 24px;
+    color: #1981b3;
+    margin-top: 10px;
+  }
+
+  @keyframes fadeUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px); /* Start slightly below its normal position */
+    }
+    20% {
+      opacity: 0.5;
+      transform: translateY(10px); /* Start slightly below its normal position */
+    }
+    60% {
+      opacity: 0.7;
+      transform: translateY(5px); /* Start slightly below its normal position */
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0); /* Fade up to its normal position */
+    }
+  }
+  
+  /* Apply the fade-up animation to elements with the 'fade-up' class */
+  .fade-up {
+    animation: fadeUp 1s ease forwards;
+  }
