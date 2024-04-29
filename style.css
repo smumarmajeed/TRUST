@@ -220,3 +220,28 @@ body, html {
   .fade-up {
     animation: fadeUp 1s ease forwards;
   }
+
+  .about {
+    height: 100vh; /* Make the section height equal to the viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #f0f0f0; /* Example background color */
+}
+
+.about-content {
+    max-width: 600px;
+}
+
+.about-content img {
+    max-width: 100%;
+    margin-bottom: 20px;
+    height: 30px;
+}
+footer { /* Example footer background color */
+  color: #fff; /* Example footer text color */
+  padding: 20px;
+  text-align: center;
+}
