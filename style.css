@@ -38,6 +38,7 @@ body, html {
   
   nav ul li {
     display: inline;
+    margin-right: 30px;
   }
   
   nav ul li a {
@@ -106,7 +107,7 @@ body, html {
     height: 40%;
     background-color: rgba(0, 0, 0, 0.5); /* Dark grey overlay */
     z-index: 1; /* Ensure the overlay is above the video */
-    border-radius: 177px 25px 155px 100px;
+    border-radius: 80px 80px 190px 190px;
   }
   
   #video-background {
@@ -154,9 +155,6 @@ body, html {
     transition: transform 0.3s ease;
   }
   
-  .image-container:hover img {
-    transform: scale(1.1);
-  }
   
   .slice-info {
     position: absolute;
@@ -240,8 +238,81 @@ body, html {
     margin-bottom: 20px;
     height: 30px;
 }
+
+.contact-bg{
+  background-image: url('1.jpg'); /* Replace 'background.jpg' with your image file */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  padding-top: 85px;
+}
+.contact-container {
+  background-color: rgba(0, 0, 0, 0.5);
+  max-width: 450px;
+  margin: 0px auto;
+  padding: 80px;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+}
+
+.contact-container h1 {
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+input, textarea {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff; /* Blue color */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker blue color on hover */
+}
+
+
+
+
 footer { /* Example footer background color */
   color: #fff; /* Example footer text color */
   padding: 20px;
   text-align: center;
+}
+
+.p-text{
+  font-size: 20px;
+}
+
+.custom-link{
+  position: absolute;
+    background-color: #000000bf;
+    color: white;
+    top: 4px;
+    right: 10px;
+    padding: 12px;
+    border-radius: 26px;
+    text-decoration: auto;
+}
+
+.custom-link:hover{
+  color: #1981b3;
 }
