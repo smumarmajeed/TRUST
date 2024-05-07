@@ -1,0 +1,109 @@
+body {
+    overflow-x:hidden;
+    overflow-y: hidden; 
+}
+
+
+
+.slideshow-canada, .slideshow-germany { 
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    transform-origin: center center;
+    animation: zoom 30s infinite;
+    max-width: 100%;
+}
+
+.slideshow-canada, .slideshow-germany li { 
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    opacity: 0;
+    z-index: 0;
+    animation: imageAnimation 50s linear infinite; 
+}
+
+.slideshow-canada li:nth-child(1) { 
+    background-image: url('images/country/canada/guillaume-jaillet-EIWCd0414xQ-unsplash.jpg');
+}
+.slideshow-canada li:nth-child(2) { 
+    background-image: url('images/country/canada/andrew-ly-iJTXWlMmoOg-unsplash.jpg');
+    animation-delay: 10s; 
+}
+.slideshow-canada li:nth-child(3) { 
+    background-image: url('images/country/canada/kalen-emsley-Bkci_8qcdvQ-unsplash.jpg');
+    animation-delay: 20s; 
+}
+.slideshow-canada li:nth-child(4) { 
+    background-image: url('images/country/canada/pexels-rpnickson-2854421.jpg');
+    animation-delay: 30s; 
+}
+
+.slideshow-germany li:nth-child(1) { 
+    background-image: url('images/country/germany/kai-pilger--uQBxh6L5D4-unsplash.jpg');
+}
+.slideshow-germany li:nth-child(2) { 
+    background-image: url('images/country/germany/pexels-olli-18897375.jpg');
+    animation-delay: 10s; 
+}
+.slideshow-germany li:nth-child(3) { 
+    background-image: url('images/country/germany/roman-kraft-g_gwdpsCVAY-unsplash.jpg');
+    animation-delay: 20s; 
+}
+
+@keyframes imageAnimation { 
+    0% { 
+        opacity: 0; 
+        animation-timing-function: ease-in;
+    }
+    10% {
+        opacity: 1;
+        animation-timing-function: ease-out;
+    }
+    20% {
+        opacity: 1;
+    }
+    30% {
+        opacity: 0;
+    }
+}
+
+/* Older browser support - .no-cssanimations class added by modernizr */
+.no-cssanimations .slideshow li {
+    opacity: 1;
+}
+
+
+h1 {
+    text-align: center;
+    padding: 15%;
+    font-size: 100px;
+}
+
+
+
+
+
+@keyframes zoom {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+      /* equals 105% */
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
