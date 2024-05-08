@@ -5,7 +5,7 @@ body {
 
 
 
-.slideshow-canada, .slideshow-germany { 
+.slideshow-canada { 
     position: fixed;
     width: 100%;
     height: 100%;
@@ -20,7 +20,7 @@ body {
     max-width: 100%;
 }
 
-.slideshow-canada, .slideshow-germany li { 
+.slideshow-canada li { 
     width: 100%;
     height: 100%;
     position: absolute;
@@ -50,6 +50,41 @@ body {
     animation-delay: 30s; 
 }
 
+/* Older browser support - .no-cssanimations class added by modernizr */
+.no-cssanimations .slideshow-canada li {
+    opacity: 1;
+}
+
+
+.slideshow-germany { 
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    transform-origin: center center;
+    animation: zoom 30s infinite;
+    max-width: 100%;
+}
+
+.slideshow-germany li { 
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    opacity: 0;
+    z-index: 0;
+    animation: imageAnimation 50s linear infinite; 
+}
+
 .slideshow-germany li:nth-child(1) { 
     background-image: url('images/country/germany/kai-pilger--uQBxh6L5D4-unsplash.jpg');
 }
@@ -61,6 +96,252 @@ body {
     background-image: url('images/country/germany/roman-kraft-g_gwdpsCVAY-unsplash.jpg');
     animation-delay: 20s; 
 }
+
+.no-cssanimations .slideshow-germany li {
+    opacity: 1;
+}
+
+
+
+.slideshow-greece { 
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    transform-origin: center center;
+    animation: zoom 30s infinite;
+    max-width: 100%;
+}
+
+.slideshow-greece li { 
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    opacity: 0;
+    z-index: 0;
+    animation: imageAnimation 50s linear infinite; 
+}
+
+.slideshow-greece li:nth-child(1) { 
+    background-image: url('images/country/greece/andrey-shevard-UISG2rrArCc-unsplash.jpg');
+}
+.slideshow-greece li:nth-child(2) { 
+    background-image: url('images/country/greece/jeroen-den-otter-HlxuCe2pkJU-unsplash.jpg');
+    animation-delay: 10s; 
+}
+.slideshow-greece li:nth-child(3) { 
+    background-image: url('images/country/greece/johnny-africa-_ZX0S27D3fw-unsplash.jpg');
+    animation-delay: 20s; 
+}
+.slideshow-greece li:nth-child(4) { 
+    background-image: url('images/country/greece/orva-studio-YC8qqp50BdA-unsplash.jpg');
+    animation-delay: 20s; 
+}
+.slideshow-greece li:nth-child(5) { 
+    background-image: url('images/country/greece/pexels-apasaric-1285625.jpg');
+    animation-delay: 20s; 
+}
+.slideshow-greece li:nth-child(6) { 
+    background-image: url('images/country/greece/pexels-pixabay-163864.jpg');
+    animation-delay: 20s; 
+}
+.slideshow-greece li:nth-child(7) { 
+    background-image: url('images/country/greece/philip-jahn-PYkpulrIMG0-unsplash.jpg');
+    animation-delay: 20s; 
+}
+
+.no-cssanimations .slideshow-greece li {
+    opacity: 1;
+}
+
+
+
+.slideshow-nwz { 
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    transform-origin: center center;
+    animation: zoom 30s infinite;
+    max-width: 100%;
+}
+
+.slideshow-nwz li { 
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    opacity: 0;
+    z-index: 0;
+    animation: imageAnimation 50s linear infinite; 
+}
+
+.slideshow-nwz li:nth-child(1) { 
+    background-image: url('images/country/newzealand/casey-horner-_aVKjJhFdn0-unsplash.jpg');
+}
+.slideshow-nwz li:nth-child(2) { 
+    background-image: url('images/country/newzealand/pexels-ahorablue-1042190.jpg');
+    animation-delay: 10s; 
+}
+.slideshow-nwz li:nth-child(3) { 
+    background-image: url('images/country/newzealand/pexels-bence-kondor-1188017-2259917.jpg');
+    animation-delay: 20s; 
+}
+.slideshow-nwz li:nth-child(4) { 
+    background-image: url('images/country/newzealand/pexels-francesco-ungaro-449007.jpg');
+    animation-delay: 20s; 
+}
+.slideshow-nwz li:nth-child(5) { 
+    background-image: url('images/country/newzealand/pexels-jose-estrella-851625-3435567.jpg');
+    animation-delay: 20s; 
+}
+.slideshow-nwz li:nth-child(6) { 
+    background-image: url('images/country/newzealand/pexels-ketan-kumawat-215630-724963.jpg');
+    animation-delay: 20s; 
+}
+.slideshow-nwz li:nth-child(7) { 
+    background-image: url('images/country/newzealand/rod-long-4dcsLxQxSHY-unsplash.jpg');
+    animation-delay: 20s; 
+}
+
+.no-cssanimations .slideshow-nwz li {
+    opacity: 1;
+}
+
+
+.slideshow-russia { 
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    transform-origin: center center;
+    animation: zoom 30s infinite;
+    max-width: 100%;
+}
+
+.slideshow-russia li { 
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    opacity: 0;
+    z-index: 0;
+    animation: imageAnimation 50s linear infinite; 
+}
+
+.slideshow-russia li:nth-child(1) { 
+    background-image: url('images/country/russia/pexels-vierro-2008087-3629813.jpg');
+}
+.slideshow-russia li:nth-child(2) { 
+    background-image: url('images/country/russia/pexels-yaroslav-shuraev-8968134.jpg');
+    animation-delay: 10s; 
+}
+.slideshow-russia li:nth-child(3) { 
+    background-image: url('images/country/russia/starosta-N2TGX-2Ih9k-unsplash.jpg');
+    animation-delay: 20s; 
+}
+.slideshow-russia li:nth-child(4) { 
+    background-image: url('images/country/russia/victor-he-uAcg4PZ_f-o-unsplash.jpg');
+    animation-delay: 30s; 
+}
+
+.no-cssanimations .slideshow-russia li {
+    opacity: 1;
+}
+
+
+.slideshow-swz { 
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    transform-origin: center center;
+    animation: zoom 30s infinite;
+    max-width: 100%;
+}
+
+.slideshow-swz li { 
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    opacity: 0;
+    z-index: 0;
+    animation: imageAnimation 50s linear infinite; 
+}
+
+.slideshow-swz li:nth-child(1) { 
+    background-image: url('images/country/switzerland/alessandro-prato-HNip-HjxrpQ-unsplash.jpg');
+}
+.slideshow-swz li:nth-child(2) { 
+    background-image: url('images/country/switzerland/jacques-bopp-CIb3g_RUlb0-unsplash.jpg');
+    animation-delay: 10s; 
+}
+.slideshow-swz li:nth-child(3) { 
+    background-image: url('images/country/switzerland/pexels-iriser-937663.jpg');
+    animation-delay: 20s; 
+}
+.slideshow-swz li:nth-child(4) { 
+    background-image: url('images/country/switzerland/photoholgic-IoUnv2cfx1c-unsplash.jpg');
+    animation-delay: 20s; 
+}
+.slideshow-swz li:nth-child(5) { 
+    background-image: url('images/country/switzerland/ricardo-gomez-angel-58uZCE8zrdk-unsplash.jpg');
+    animation-delay: 20s; 
+}
+.slideshow-swz li:nth-child(6) { 
+    background-image: url('images/country/switzerland/ricardo-gomez-angel-JJD1i9YO7w8-unsplash.jpg');
+    animation-delay: 20s; 
+}
+.no-cssanimations .slideshow-swz li {
+    opacity: 1;
+}
+
+
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+}
+
+
 
 @keyframes imageAnimation { 
     0% { 
@@ -79,27 +360,20 @@ body {
     }
 }
 
-/* Older browser support - .no-cssanimations class added by modernizr */
-.no-cssanimations .slideshow li {
-    opacity: 1;
-}
-
-
-h1 {
-    text-align: center;
-    padding: 15%;
-    font-size: 100px;
-}
-
-
-
-
 
 @keyframes zoom {
     0% {
       transform: scale(1);
     }
+    25% {
+        transform: scale(1.05);
+        /* equals 105% */
+      }
     50% {
+        transform: scale(1.9);
+        /* equals 105% */
+      }
+    75% {
       transform: scale(1.05);
       /* equals 105% */
     }
