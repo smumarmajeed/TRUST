@@ -129,7 +129,7 @@ body {
     background-repeat: no-repeat;
     opacity: 0;
     z-index: 0;
-    animation: imageAnimation 50s linear infinite; 
+    animation: imageAnimation 70s linear infinite; 
 }
 
 .slideshow-greece li:nth-child(1) { 
@@ -145,19 +145,19 @@ body {
 }
 .slideshow-greece li:nth-child(4) { 
     background-image: url('images/country/greece/orva-studio-YC8qqp50BdA-unsplash.jpg');
-    animation-delay: 20s; 
+    animation-delay: 30s; 
 }
 .slideshow-greece li:nth-child(5) { 
     background-image: url('images/country/greece/pexels-apasaric-1285625.jpg');
-    animation-delay: 20s; 
+    animation-delay: 40s; 
 }
 .slideshow-greece li:nth-child(6) { 
     background-image: url('images/country/greece/pexels-pixabay-163864.jpg');
-    animation-delay: 20s; 
+    animation-delay: 50s; 
 }
 .slideshow-greece li:nth-child(7) { 
     background-image: url('images/country/greece/philip-jahn-PYkpulrIMG0-unsplash.jpg');
-    animation-delay: 20s; 
+    animation-delay: 60s; 
 }
 
 .no-cssanimations .slideshow-greece li {
@@ -192,7 +192,7 @@ body {
     background-repeat: no-repeat;
     opacity: 0;
     z-index: 0;
-    animation: imageAnimation 50s linear infinite; 
+    animation: imageAnimation 70s linear infinite; 
 }
 
 .slideshow-nwz li:nth-child(1) { 
@@ -208,19 +208,19 @@ body {
 }
 .slideshow-nwz li:nth-child(4) { 
     background-image: url('images/country/newzealand/pexels-francesco-ungaro-449007.jpg');
-    animation-delay: 20s; 
+    animation-delay: 30s; 
 }
 .slideshow-nwz li:nth-child(5) { 
     background-image: url('images/country/newzealand/pexels-jose-estrella-851625-3435567.jpg');
-    animation-delay: 20s; 
+    animation-delay: 40s; 
 }
 .slideshow-nwz li:nth-child(6) { 
     background-image: url('images/country/newzealand/pexels-ketan-kumawat-215630-724963.jpg');
-    animation-delay: 20s; 
+    animation-delay: 50s; 
 }
 .slideshow-nwz li:nth-child(7) { 
     background-image: url('images/country/newzealand/rod-long-4dcsLxQxSHY-unsplash.jpg');
-    animation-delay: 20s; 
+    animation-delay: 60s; 
 }
 
 .no-cssanimations .slideshow-nwz li {
@@ -254,7 +254,7 @@ body {
     background-repeat: no-repeat;
     opacity: 0;
     z-index: 0;
-    animation: imageAnimation 50s linear infinite; 
+    animation: imageAnimation 40s linear infinite; 
 }
 
 .slideshow-russia li:nth-child(1) { 
@@ -304,7 +304,7 @@ body {
     background-repeat: no-repeat;
     opacity: 0;
     z-index: 0;
-    animation: imageAnimation 50s linear infinite; 
+    animation: imageAnimation 60s linear infinite; 
 }
 
 .slideshow-swz li:nth-child(1) { 
@@ -320,15 +320,15 @@ body {
 }
 .slideshow-swz li:nth-child(4) { 
     background-image: url('images/country/switzerland/photoholgic-IoUnv2cfx1c-unsplash.jpg');
-    animation-delay: 20s; 
+    animation-delay: 30s; 
 }
 .slideshow-swz li:nth-child(5) { 
     background-image: url('images/country/switzerland/ricardo-gomez-angel-58uZCE8zrdk-unsplash.jpg');
-    animation-delay: 20s; 
+    animation-delay: 40s; 
 }
 .slideshow-swz li:nth-child(6) { 
     background-image: url('images/country/switzerland/ricardo-gomez-angel-JJD1i9YO7w8-unsplash.jpg');
-    animation-delay: 20s; 
+    animation-delay: 50s; 
 }
 .no-cssanimations .slideshow-swz li {
     opacity: 1;
