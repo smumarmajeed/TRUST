@@ -344,7 +344,6 @@ footer { /* Example footer background color */
 }
 
 
-/* @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500); */
 .color-violet .container-button {
   background-color: #98f;
 }
@@ -365,7 +364,7 @@ footer { /* Example footer background color */
   color: #1bbc9d;
 }
 
-.color-red .container-button {
+/* .color-red .container-button {
   background-color: #DB343A;
 }
 .color-red .container-button:before {
@@ -383,7 +382,7 @@ footer { /* Example footer background color */
 }
 .color-pink .w-item span {
   color: #E91E63;
-}
+} */
 
 .color-blue .container-button {
   background-color: #3498db;
